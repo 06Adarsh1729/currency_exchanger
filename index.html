@@ -1,0 +1,46 @@
+<html lang="en-US">
+
+<head>
+  <title>Currency Exchanger</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Currency Exchanger</h1>
+    <!-- INPUT AMOUNT IN US DOLLARS -->
+    <div>
+      <label for="amount">Enter an amount in U.S. dollars: <br>$</label>
+      <input id="amount" type="text">
+    </div>
+    <!-- INPUT CURRENCY -->
+    <div>
+      <label for="currency">Select a currency to convert to:</label><br>
+      <select class="form-control" id="currency">
+        <option value="Euros" selected>Euros €</option>
+        <option value="Pesos">Mexican Pesos $</option>
+        <option value="HK Dollars">Hong Kong Dollars $</option>
+        <option value="Rupees">Indian Rupees ₹</option>
+        <option value="Krona">Swedish Krona kr</option>
+      </select>
+    </div>
+    <!-- GET RESULT -->
+    <button class="btn-success" id="convert">CONVERT</button>
+    <div class="showErrors"></div>
+    <div class="showEuros"></div>
+    <div class="showPesos"></div>
+    <div class="showHkDollars"></div>
+    <div class="showRupees"></div>
+    <div class="showKrona"></div>
+  </div>
+</body>
+
+</html>
+
+
+<!-- //A user should be able to enter an amount (in U.S. dollars) and then specify another currency (such as the South Korean won). The user should then see the total amount they entered in converted currency. In the example above, a user might enter 10 dollars and then see that amount in South Korean won.
+Users should be able to convert U.S. currency into at least 5 other types of currency.
+If the API call results in an error (any message not a 200 OK), the application should return a notification to the user that states what the error is. (That means the error should show up in the DOM, not in the console.)
+If the query response doesn't include that particular currency, the application should return a notification that states the currency in question doesn't exist. (Note: Even if you use a dropdown menu to specify currencies instead of a form field, you'll still need to add this functionality to your code.) -->
